@@ -1,0 +1,30 @@
+a:visited,
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  color: darkgray;
+  stroke: darkgray;
+}
+
+.section-link {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.highlighted {
+  box-sizing: border-box;
+  border-left: 10px RGB(195, 85, 80) solid;
+}
+
+.highlighted .section-link {
+  margin-left: -10px;
+}

@@ -1,0 +1,15 @@
+.main-desktop {
+  margin-left: 250px;
+  width: calc(100vw - 250px);
+  background-color: rgb(116, 116, 116);
+  height: 100vh;
+  margin-top: 0px;
+
+  overflow-y: scroll;
+}
+
+.main-mobile {
+  height: calc(100vh - 6rem);
+  background-color: rgb(116, 116, 116);
+  margin-top: 6rem;
+}
