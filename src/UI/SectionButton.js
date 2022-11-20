@@ -8,7 +8,7 @@ const SectionButton = (props) => {
     props.closeDrawerHandler();
   };
   return (
-    <Button onClick={changeSectionHandler}>
+    <Button onClick={changeSectionHandler} className={sectionClass}>
       <h1 className={classes["section-link"]}>{props.children}</h1>
     </Button>
   );
