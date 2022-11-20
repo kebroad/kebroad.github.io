@@ -5,7 +5,10 @@ import classes from "./SideMenu.module.css";
 const SideMenu = (props) => {
   return (
     <aside>
-      <Navigation currentPage={props.currentPage}></Navigation>
+      <Navigation
+        sectionType={props.sectionType}
+        setSectionType={props.setSectionType}
+      ></Navigation>
     </aside>
   );
 };

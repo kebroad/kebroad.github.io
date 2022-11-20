@@ -1,5 +1,4 @@
 import React from "react";
-import Page from "../../UI/Page";
 // import CvsImage from "../assets/images/cvs.png";
 import classes from "./Experience.module.css";
 import useMobile from "../../hooks/useMobile";
@@ -13,7 +12,7 @@ import lsu from "../../assets/images/lsu.jpg";
 const Experience = () => {
   const isMobile = useMobile();
   return (
-    <Page isMobile={isMobile} currentPage="experience">
+    <>
       <TimelineSection
         dates="December 2022-Present"
         company="Cruise"
@@ -63,7 +62,7 @@ const Experience = () => {
         imagesrc={lsu}
         isMobile={isMobile}
       ></TimelineSection>
-    </Page>
+    </>
   );
 };
 

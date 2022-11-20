@@ -3,33 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
-import Home from "./routes/Home";
-import Experience from "./routes/Experience/Experience";
-import Skills from "./routes/Skills";
-import Projects from "./routes/Projects";
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home></Home>,
-  },
-  {
-    path: "experience",
-    element: <Experience></Experience>,
-  },
-  {
-    path: "skills",
-    element: <Skills></Skills>,
-  },
-  {
-    path: "projects",
-    element: <Projects></Projects>,
-  },
-]);
+import Home from "./sections/About";
+import Experience from "./sections/Experience/Experience";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App></App>
   </React.StrictMode>
 );
 
