@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.31206072.css",
-    "main.js": "/static/js/main.00eee424.js",
+    "main.css": "/static/css/main.b4d94f53.css",
+    "main.js": "/static/js/main.f278daca.js",
     "static/js/787.132fefda.chunk.js": "/static/js/787.132fefda.chunk.js",
-    "static/media/cvs.jpg": "/static/media/cvs.b6550cc275025ae48e3c.jpg",
-    "static/media/lsu.jpg": "/static/media/lsu.56386b185b58533c7664.jpg",
-    "static/media/entergy.jpg": "/static/media/entergy.fd41facd98e3fc53bff0.jpg",
-    "static/media/cruise.jpg": "/static/media/cruise.ed80ccc1542d9812971e.jpg",
-    "static/media/exxon.jpg": "/static/media/exxon.73b3eeee037fd4fa30a1.jpg",
+    "static/media/lsu.jpg": "/static/media/lsu.5cb46a806cab6c6f75af.jpg",
+    "static/media/entergy.jpg": "/static/media/entergy.58e8ab17dbd9e6d9e380.jpg",
+    "static/media/cvs.jpg": "/static/media/cvs.341245e70102313d4e3b.jpg",
+    "static/media/cruise.jpg": "/static/media/cruise.7a3452820d504cf4bf25.jpg",
+    "static/media/exxon.jpg": "/static/media/exxon.d78e91dce6e463b495e6.jpg",
     "index.html": "/index.html",
-    "main.31206072.css.map": "/static/css/main.31206072.css.map",
-    "main.00eee424.js.map": "/static/js/main.00eee424.js.map",
+    "main.b4d94f53.css.map": "/static/css/main.b4d94f53.css.map",
+    "main.f278daca.js.map": "/static/js/main.f278daca.js.map",
     "787.132fefda.chunk.js.map": "/static/js/787.132fefda.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31206072.css",
-    "static/js/main.00eee424.js"
+    "static/css/main.b4d94f53.css",
+    "static/js/main.f278daca.js"
   ]
 }
