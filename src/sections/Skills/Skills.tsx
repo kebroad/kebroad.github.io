@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useMemo } from "react";
 import WordCloud from "react-d3-cloud";
 import useMobile from "../../hooks/useMobile";
 import SkillsGraph from "./SkillsGraph";
@@ -21,6 +21,8 @@ import {
   siArduino,
   siPython,
   siIstio,
+  siNginx,
+  siGit,
 } from "simple-icons/icons";
 
 import { SiJavascript } from "react-icons/si";
@@ -41,6 +43,8 @@ const skills = [
   { name: "Arduino", icon: siArduino, level: "Intermediate" },
   { name: "Python", icon: siPython, level: "Intermediate" },
   { name: "Istio", icon: siIstio, level: "Intermediate" },
+  { name: "NGINX", icon: siNginx, level: "Intermediate" },
+  { name: "Git", icon: siGit, level: "Expert" },
 ];
 
 // const icons = skills.map((skill) => {
@@ -59,7 +63,7 @@ const Skills = () => {
   const icons = skills.map((skill) => {
     const i = renderSimpleIcon({
       icon: skill.icon,
-      size: 42,
+      size: 85,
       aProps: {
         onClick: (e) => {
           e.preventDefault();
@@ -75,17 +79,26 @@ const Skills = () => {
     });
     return i;
   });
-  return (
-    <>
+
+  const cloud = useMemo(
+    () => (
       <Cloud
-        options={{
-          imageMode: "both",
-          imagePosition: "top",
-          textHeight: "20",
-        }}
+        options={
+          {
+            // imageMode: "both",
+            // imagePosition: "top",
+            // textHeight: "20",
+          }
+        }
       >
         {icons}
       </Cloud>
+    ),
+    []
+  );
+  return (
+    <>
+      {cloud}
       <h1>{currentSkill.name}</h1>
     </>
   );
