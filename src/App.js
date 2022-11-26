@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Home from "./sections/About";
 import Experience from "./sections/Experience/Experience";
 import Projects from "./sections/Projects";
-import Skills from "./sections/Skills";
+import Skills from "./sections/Skills/Skills.tsx";
 import SideMenu from "./UI/Desktop/SideMenu";
 import TopMenu from "./UI/Mobile/TopMenu";
 import Navigation from "./UI/Navigation";
@@ -52,6 +52,7 @@ const App = () => {
       ) : (
         <>
           <TopMenu
+            sectionType={sectionType}
             isMobile={isMobile}
             openDrawerHandler={openDrawerHandler}
           ></TopMenu>

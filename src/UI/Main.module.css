@@ -9,8 +9,8 @@
 }
 
 .main-mobile {
-  height: calc(100vh - 6rem);
+  height: calc(100vh - 6.6rem);
   background-color: rgb(116, 116, 116);
-  margin-top: 6rem;
+  margin-top: 7rem;
   overflow-y: scroll;
 }

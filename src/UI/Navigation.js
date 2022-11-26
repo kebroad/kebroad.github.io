@@ -9,6 +9,7 @@ const Navigation = (props) => {
   return (
     <nav className={classes.navbar}>
       <Header
+        sectionType="navigation"
         isMobile={props.isMobile}
         toggleDrawerHandler={props.closeDrawerHandler}
       ></Header>

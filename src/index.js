@@ -3,10 +3,6 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Home from "./sections/About";
-import Experience from "./sections/Experience/Experience";
-import Skills from "./sections/Skills";
-import Projects from "./sections/Projects";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

@@ -1,22 +1,34 @@
 .header {
   display: flex;
+  flex-direction: column;
   background-color: rgba(30, 82, 82, 0.854);
 
   text-align: center;
   /* font-family: "Monofett", cursive; */
   font-family: "Tomorrow", sans-serif;
   /* color: rgb(160, 158, 31); */
-  height: 6rem;
   padding: 0;
   align-items: center;
+  height: 7rem;
+}
+
+.header-row {
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 4rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0;
 }
 
 .header-text {
   width: 100%;
   /* padding-left: 10px;
   padding-right: 10px; */
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+
   margin: 0;
   font-size: 3rem;
 }
@@ -30,4 +42,18 @@
   width: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.page {
+  margin-top: 0;
+  text-align: left;
+  font-size: 1.3rem;
+  padding-left: 10rem;
+  font-weight: 100;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.spacing {
+  height: 1.3rem;
 }
