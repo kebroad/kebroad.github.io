@@ -89,15 +89,19 @@ const Skills = (props) => {
     () => (
       <Cloud
         canvasProps={{
-          style: { height: "100%", margin: "auto", display: "block" },
+          style: props.isMobile
+            ? { width: "100vw" }
+            : { height: "80vh", margin: "auto", display: "block" },
           // width: "100%",
           // height: "100%",
         }}
-        containerProps={{
-          style: { height: "80vh", width: "100%" },
-          // width: "10rem",
-          // height: "10rem",
-        }}
+        containerProps={
+          {
+            // style: { height: "80vh", width: "100%" },
+            // width: "10rem",
+            // height: "10rem",
+          }
+        }
         options={
           {
             // imageMode: "both",
@@ -114,7 +118,7 @@ const Skills = (props) => {
   return (
     <div className={classes["skills-background"]}>
       {cloud}
-      <SkillExperience skill={currentSkill} />
+      <SkillExperience isMobile={props.isMobile} skill={currentSkill} />
     </div>
   );
 };

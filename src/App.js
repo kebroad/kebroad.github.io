@@ -23,7 +23,7 @@ const App = () => {
       section = <Projects></Projects>;
       break;
     case "skills":
-      section = <Skills></Skills>;
+      section = <Skills isMobile={isMobile}></Skills>;
       break;
   }
   const [drawerIsShown, setDrawerIsShown] = useState(false);
