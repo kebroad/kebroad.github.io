@@ -1,0 +1,36 @@
+.level-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.level {
+  height: 2rem;
+  width: 2rem;
+  margin: 0.07rem;
+}
+
+.experience {
+  margin-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.skill-description {
+  background-color: white;
+  width: 80vh;
+  margin: auto;
+  /* height: 20vh; */
+  font-family: "Tomorrow", sans-serif;
+}
+
+.skill-name {
+  margin: 0;
+}
+
+.break {
+  /* border: 3px solid rgba(30, 82, 82, 0.854); */
+  height: 0.2rem;
+  background-color: rgba(30, 82, 82, 0.854);
+  border-radius: 5px;
+}

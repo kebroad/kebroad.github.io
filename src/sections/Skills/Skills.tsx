@@ -3,6 +3,9 @@ import WordCloud from "react-d3-cloud";
 import useMobile from "../../hooks/useMobile";
 import SkillsGraph from "./SkillsGraph";
 import { Cloud, renderSimpleIcon } from "react-icon-cloud";
+import classes from "./Skills.module.css";
+import Card from "../../UI/Card";
+import SkillExperience from "./SkillExperience";
 import {
   siJavascript,
   siNextdotjs,
@@ -23,28 +26,30 @@ import {
   siIstio,
   siNginx,
   siGit,
+  siFlutter,
 } from "simple-icons/icons";
 
 import { SiJavascript } from "react-icons/si";
 
 const skills = [
-  { name: "Kubernetes", icon: siKubernetes, level: "Expert" },
-  { name: "Argo", icon: siArgo, level: "Expert" },
-  { name: "Docker", icon: siDocker, level: "Expert" },
-  { name: "React", icon: siReact, level: "Intermediate" },
-  { name: "Go", icon: siGo, level: "Intermediate" },
-  { name: "PowerShell", icon: siPowershell, level: "Intermediate" },
-  { name: "Helm", icon: siHelm, level: "Expert" },
-  { name: "GNU Bash", icon: siGnubash, level: "Intermediate" },
-  { name: "Microsoft Azure", icon: siMicrosoftazure, level: "Expert" },
-  { name: "C++", icon: siCplusplus, level: "Intermediate" },
-  { name: "CSS3", icon: siCss3, level: "Intermediate" },
-  { name: "ROS", icon: siRos, level: "Intermediate" },
-  { name: "Arduino", icon: siArduino, level: "Intermediate" },
-  { name: "Python", icon: siPython, level: "Intermediate" },
-  { name: "Istio", icon: siIstio, level: "Intermediate" },
-  { name: "NGINX", icon: siNginx, level: "Intermediate" },
-  { name: "Git", icon: siGit, level: "Expert" },
+  { name: "Kubernetes", icon: siKubernetes, level: 5 },
+  { name: "Argo", icon: siArgo, level: 5 },
+  { name: "Docker", icon: siDocker, level: 5 },
+  { name: "React", icon: siReact, level: 3 },
+  { name: "Go", icon: siGo, level: 3 },
+  { name: "PowerShell", icon: siPowershell, level: 4 },
+  { name: "Helm", icon: siHelm, level: 5 },
+  { name: "GNU Bash", icon: siGnubash, level: 3 },
+  { name: "Microsoft Azure", icon: siMicrosoftazure, level: 5 },
+  { name: "C++", icon: siCplusplus, level: 3 },
+  { name: "CSS3", icon: siCss3, level: 3 },
+  { name: "ROS", icon: siRos, level: 3 },
+  { name: "Arduino", icon: siArduino, level: 4 },
+  { name: "Python", icon: siPython, level: 3 },
+  { name: "Istio", icon: siIstio, level: 3 },
+  { name: "NGINX", icon: siNginx, level: 3 },
+  { name: "Git", icon: siGit, level: 5 },
+  { name: "Flutter", icon: siFlutter, level: 4 },
 ];
 
 // const icons = skills.map((skill) => {
@@ -54,7 +59,7 @@ const skills = [
 //   </a>
 // })
 
-const Skills = () => {
+const Skills = (props) => {
   const [currentSkill, setCurrentSkill] = useState({
     name: "Click on a Skill to get Started!",
     icon: null,
@@ -83,6 +88,16 @@ const Skills = () => {
   const cloud = useMemo(
     () => (
       <Cloud
+        canvasProps={{
+          style: { height: "100%", margin: "auto", display: "block" },
+          // width: "100%",
+          // height: "100%",
+        }}
+        containerProps={{
+          style: { height: "80vh", width: "100%" },
+          // width: "10rem",
+          // height: "10rem",
+        }}
         options={
           {
             // imageMode: "both",
@@ -97,118 +112,11 @@ const Skills = () => {
     []
   );
   return (
-    <>
+    <div className={classes["skills-background"]}>
       {cloud}
-      <h1>{currentSkill.name}</h1>
-    </>
+      <SkillExperience skill={currentSkill} />
+    </div>
   );
-  // const colors = [
-  //   "#1e5252da",
-  //   "#C35550",
-  //   "#000000",
-  //   "#FFFFFF",
-  //   // "#48CAE4",
-  //   // "#00B4D8",
-  //   // "#0077B6",
-  //   // "#023E8A",
-  // ];
-  // const rotate = useCallback(() => 0, []);
-  // const fontSize = useCallback((word) => 10 * word.value, []);
-  // const fill = useCallback(
-  //   () => colors[Math.floor(Math.random() * colors.length)],
-  //   []
-  // );
-  // const words = [
-  //   {
-  //     text: "Terraform",
-  //     value: 5,
-  //   },
-  //   {
-  //     text: "Git",
-  //     value: 5,
-  //   },
-  //   {
-  //     text: "Docker",
-  //     value: 5,
-  //   },
-  //   {
-  //     text: "Kubernetes",
-  //     value: 5,
-  //   },
-  //   {
-  //     text: "Helm",
-  //     value: 5,
-  //   },
-  //   {
-  //     text: "Jenkins",
-  //     value: 5,
-  //   },
-  //   {
-  //     text: "ArgoCD",
-  //     value: 5,
-  //   },
-  //   {
-  //     text: "Flux",
-  //     value: 5,
-  //   },
-  //   {
-  //     text: "Vagrant",
-  //     value: 3,
-  //   },
-  //   {
-  //     text: "Bash",
-  //     value: 4,
-  //   },
-  //   {
-  //     text: "Python",
-  //     value: 4,
-  //   },
-  //   {
-  //     text: "Javascript",
-  //     value: 4,
-  //   },
-  //   {
-  //     text: "Powershell",
-  //     value: 5,
-  //   },
-  //   {
-  //     text: "Go",
-  //     value: 3,
-  //   },
-  //   {
-  //     text: "C++",
-  //     value: 3,
-  //   },
-  //   {
-  //     text: "Azure",
-  //     value: 5,
-  //   },
-  //   {
-  //     text: "GCP",
-  //     value: 2,
-  //   },
-  // ];
-  // const options = {
-  //   rotations: 0,
-  //   rotationAngles: [0, 0],
-  // };
-  // const isMobile = useMobile();
-  // return (
-  //   <>
-  //     <WordCloud
-  //       font="Tomorrow"
-  //       options={options}
-  //       data={words}
-  //       maxWords={20}
-  //       fontSize={fontSize}
-  //       fill={fill}
-  //       rotate={rotate}
-  //       onWordMouseOver={(event, d) => {
-  //         console.log(`onWordMouseOver: ${d.text}`);
-  //       }}
-  //     />
-  //   </>
-  // );
 };
 
 export default Skills;
