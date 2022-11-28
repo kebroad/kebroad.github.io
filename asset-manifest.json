@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.529d1304.css",
-    "main.js": "/static/js/main.67264e72.js",
+    "main.css": "/static/css/main.3296acd7.css",
+    "main.js": "/static/js/main.d64af6b6.js",
     "static/js/787.132fefda.chunk.js": "/static/js/787.132fefda.chunk.js",
     "static/media/lsu.jpg": "/static/media/lsu.5cb46a806cab6c6f75af.jpg",
     "static/media/entergy.jpg": "/static/media/entergy.58e8ab17dbd9e6d9e380.jpg",
@@ -9,12 +9,13 @@
     "static/media/cruise.jpg": "/static/media/cruise.7a3452820d504cf4bf25.jpg",
     "static/media/exxon.jpg": "/static/media/exxon.d78e91dce6e463b495e6.jpg",
     "index.html": "/index.html",
-    "main.529d1304.css.map": "/static/css/main.529d1304.css.map",
-    "main.67264e72.js.map": "/static/js/main.67264e72.js.map",
+    "static/media/sailboat.svg": "/static/media/sailboat.2fea84d44697041cea491f1ada927f04.svg",
+    "main.3296acd7.css.map": "/static/css/main.3296acd7.css.map",
+    "main.d64af6b6.js.map": "/static/js/main.d64af6b6.js.map",
     "787.132fefda.chunk.js.map": "/static/js/787.132fefda.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.529d1304.css",
-    "static/js/main.67264e72.js"
+    "static/css/main.3296acd7.css",
+    "static/js/main.d64af6b6.js"
   ]
 }
