@@ -37,14 +37,14 @@ const Navigation = (props) => {
       >
         Skills
       </SectionButton>
-      <SectionButton
+      {/* <SectionButton
         choice="projects"
         highlight={props.sectionType === "projects"}
         setSectionType={props.setSectionType}
         closeDrawerHandler={props.closeDrawerHandler}
       >
         Projects
-      </SectionButton>
+      </SectionButton> */}
 
       {/* <Link route="experience" highlight={props.sectionType === "experience"}>
         Experience

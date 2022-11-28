@@ -27,6 +27,9 @@ import {
   siNginx,
   siGit,
   siFlutter,
+  siTerraform,
+  siJenkins,
+  siAnsible,
 } from "simple-icons/icons";
 
 import { SiJavascript } from "react-icons/si";
@@ -50,6 +53,9 @@ const skills = [
   { name: "NGINX", icon: siNginx, level: 3 },
   { name: "Git", icon: siGit, level: 5 },
   { name: "Flutter", icon: siFlutter, level: 4 },
+  { name: "Terraform", icon: siTerraform, level: 5 },
+  { name: "Jenkins", icon: siJenkins, level: 5 },
+  { name: "Ansible", icon: siAnsible, level: 3 },
 ];
 
 // const icons = skills.map((skill) => {
