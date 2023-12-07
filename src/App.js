@@ -8,6 +8,9 @@ import classes from "./About.module.css";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { RiGraduationCapFill } from "react-icons/ri";
 import { MdWork, MdRocketLaunch  } from "react-icons/md";
+import { FaTools } from "react-icons/fa";
+import SectionHeader from "./UI/SectionHeader";
+import Experience from './sections/Experience/Experience';
 
 import portrait from "./assets/images/portait.png"
 
@@ -43,18 +46,15 @@ function App() {
             </div>
             <img className={classes.portrait} src={portrait}></img>
           </div>
-          <div className={classes["section-header"]}>
-            <MdWork className={classes["section-header-icon"]}/>
-            <h1>Experience</h1>
+          <div>
+            <SectionHeader title="Experience" icon={<MdWork/>}/>
+            <Experience/>
           </div>
-          <div className={classes["section-header"]}>
-            <RiGraduationCapFill className={classes["section-header-icon"]}/>
-            <h1>Education</h1>
-          </div>
-          <div className={classes["section-header"]}>
-            <MdRocketLaunch className={classes["section-header-icon"]}/>
-            <h1>Portfolio</h1>
-          </div>
+          <SectionHeader title="Education" icon={<RiGraduationCapFill/>}/>
+          <SectionHeader title="Skills" icon={<FaTools/>}/>
+          <SectionHeader title="Projects" icon={<MdRocketLaunch/>}/>
+
+          
         </div>
       </div>
       <Particles
@@ -72,7 +72,7 @@ function App() {
             },
           },
           fullScreen: {
-            enable: true,
+            enable: false,
             zIndex: -10,
           },
           fpsLimit: 120,
