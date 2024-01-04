@@ -1,0 +1,13 @@
+
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+/* .skill {
+    margin-left:3rem;
+    margin-right: 3rem;
+} */

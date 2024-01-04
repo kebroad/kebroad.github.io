@@ -6,13 +6,13 @@ import { loadFull } from "tsparticles";
 import sailboat from "./assets/images/sailboat.svg";
 import classes from "./About.module.css";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { RiGraduationCapFill } from "react-icons/ri";
-import { MdWork, MdRocketLaunch  } from "react-icons/md";
-import { FaTools } from "react-icons/fa";
 import SectionHeader from "./UI/SectionHeader";
 import Experience from './sections/Experience/Experience';
-
+import { experience, education, skills, projects } from './data/content';
 import portrait from "./assets/images/portait.png"
+import Education from './sections/Education/Education';
+import Skills from './sections/Skills/Skills';
+import Projects from './sections/Projects/Projects';
 
 function App() {
 
@@ -45,14 +45,12 @@ function App() {
               <p>I'm an engineer and tinkerer with a passion for infrastructure, software, and robotics, amongst other things. </p>
             </div>
             <img className={classes.portrait} src={portrait}></img>
-          </div>
-          <div>
-            <SectionHeader title="Experience" icon={<MdWork/>}/>
-            <Experience/>
-          </div>
-          <SectionHeader title="Education" icon={<RiGraduationCapFill/>}/>
-          <SectionHeader title="Skills" icon={<FaTools/>}/>
-          <SectionHeader title="Projects" icon={<MdRocketLaunch/>}/>
+          </div>  
+          <Experience experience={experience}/>
+          <Education education={education}/>
+          <Skills skills={skills}/>
+          <Projects projects={projects}/>
+          
 
           
         </div>
@@ -72,8 +70,8 @@ function App() {
             },
           },
           fullScreen: {
-            enable: false,
-            zIndex: -10,
+            enable: true,
+            zIndex: -1,
           },
           fpsLimit: 120,
           interactivity: {
