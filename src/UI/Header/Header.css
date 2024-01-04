@@ -33,13 +33,14 @@
 
 .header-icon-row{
   display: flex;
+    backdrop-filter: blur(1px);
 }
 
 .header-icon {
   height: 2rem;
   width: 2rem;
   padding: 0.5rem;
-  backdrop-filter: blur(1px);
+
 }
 
 a {
