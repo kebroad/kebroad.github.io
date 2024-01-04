@@ -2,4 +2,4 @@
 
 ## About
 
-My personal website! written in react and hosted on github pages.
+My personal website! written in React and hosted on Github pages.
