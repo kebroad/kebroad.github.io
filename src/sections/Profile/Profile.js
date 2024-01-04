@@ -1,8 +1,14 @@
 import React from 'react'
+import './Profile.css'
 
-const Profile = () => {
+const Profile = ({portrait, description}) => {
   return (
-    <div>Profile</div>
+    <div className="profile">
+      <div className="description">
+        {description}
+      </div>
+      <img className="portrait" src={portrait}></img>
+    </div>  
   )
 }
 

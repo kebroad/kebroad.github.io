@@ -37,6 +37,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 1rem;
 }
 
 .timeline-node-circle {
@@ -56,7 +57,17 @@
 
 .timeline-content-top {
     margin: 0;
+    font-size: 1.2rem; /* Add this line to set the font size */
 }
+
+@media (max-width: 768px) {
+    .timeline-content-top {
+        margin: 0;
+        font-size: 1.2rem; /* Add this line to set the font size */
+    }
+}
+
+
 
 .timeline-content-bottom {
     margin: 0;

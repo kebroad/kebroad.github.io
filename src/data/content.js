@@ -7,6 +7,20 @@ import RobotGIF from '../assets/images/robot.gif';
 import RobotPlanning from '../assets/images/robot-planning.gif';
 import RaspberryPiCluster from '../assets/images/raspberry-pi-cluster.jpg';
 import Kubernetes from '../assets/images/kubernetes.png';
+import VertigoApp from '../assets/images/vertigo-app.png';
+import Portrait from "../assets/images/portait.png"
+
+export const name = "Kevin Broadbridge"
+
+export const githubLink = "https://github.com/kebroad"
+export const linkedInLink = "https://github.com/kebroad"
+
+export const portrait = Portrait
+
+export const description = (<>
+    <p>🙋🏼‍♂️Welcome to my website! </p>
+    <p>I'm an engineer and tinkerer with a passion for infrastructure, software, and robotics, amongst other things. </p>
+</>)
 
 export const about = {
     description: "🙋🏼‍♂️Welcome to my website! I'm an engineer and tinkerer with a passion for infrastructure, software, and robotics, amongst other things."
@@ -40,6 +54,11 @@ export const projects = [
         title: "Raspberry Pi Kubernetes Cluster",
         description: "Built a 4 node Raspberry Pi Kubernetes cluster. Used Ansible to automate the setup of the cluster. Used cert-manager for SSL certificates."
     },
+    {
+        photos: [VertigoApp],
+        title: "Vertigo Exercises App",
+        description: "Created an app for iOS and Android to help people with BPPV Vertigo (something I get myself). The app walks the user through vertigo exercises and uses the phone's accelerometer to track head movements and provide feedback to the user. The app was built using Flutter. It currently has ~5 daily active users and >1000 downloads."
+    }
 
 
 ]

@@ -1,8 +1,8 @@
 import React from 'react'
 
 import './Experience.css'
-import Timeline from '../../UI/Timeline';
-import SectionHeader from '../../UI/SectionHeader';
+import Timeline from '../../UI/Timeline/Timeline';
+import SectionHeader from '../../UI/SectionHeader/SectionHeader';
 import { MdWork } from 'react-icons/md';
 
 const Experience = ({experience}) => {

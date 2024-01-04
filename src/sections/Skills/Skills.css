@@ -1,13 +1,17 @@
 
 
+
 .skills {
     display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-/* .skill {
-    margin-left:3rem;
-    margin-right: 3rem;
-} */
+.skill {
+    flex: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

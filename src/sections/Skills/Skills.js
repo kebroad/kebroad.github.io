@@ -1,6 +1,6 @@
 import React from 'react'
 import './Skills.css'
-import SectionHeader from '../../UI/SectionHeader';
+import SectionHeader from '../../UI/SectionHeader/SectionHeader';
 import { FaTools } from 'react-icons/fa';
 
 const Skills = ({skills}) => {

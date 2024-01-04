@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionHeader from '../../UI/SectionHeader';
+import SectionHeader from '../../UI/SectionHeader/SectionHeader';
 import { MdRocketLaunch } from 'react-icons/md';
 import './Projects.css'
 

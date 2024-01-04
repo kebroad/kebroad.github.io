@@ -1,8 +1,8 @@
 
 import React from 'react'
 
-import Timeline from '../../UI/Timeline';
-import SectionHeader from '../../UI/SectionHeader';
+import Timeline from '../../UI/Timeline/Timeline';
+import SectionHeader from '../../UI/SectionHeader/SectionHeader';
 import { RiGraduationCapFill } from 'react-icons/ri';
 
 const Education = ({education}) => {
