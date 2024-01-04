@@ -2,9 +2,11 @@
 .projects{
      margin: auto;
 
-display: flex;
-margin-left: 2rem;
-margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -29,11 +31,12 @@ margin-right: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
 }
 
 .project-photo {
-    object-fit: cover;
+    object-fit: contain;
     height: auto;
     flex: 1;
 }

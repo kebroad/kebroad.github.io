@@ -14,6 +14,9 @@ const Projects = ({projects}) => {
                     <h3 className='project-title'>{project.title}</h3>
                 </div>
                 <p className='project-description'>{project.description}</p>
+                {project.link && (
+                  <a href={project.link} className='project-link'>Link</a>
+                )}
                 <div className='project-photos'>
                   {project.photos.map((photo, _) => (
                     <img className='project-photo' style={{width: project.photos.length}}  src={photo}></img>
