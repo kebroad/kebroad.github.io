@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import Experience from './sections/Experience/Experience';
-import { name, githubLink, linkedInLink, portrait, description, experience, education, skills, projects } from './data/content';
+import { name, githubLink, linkedInLink, portrait, description, experience, education, skills, projects, footerText} from './data/content';
 import Education from './sections/Education/Education';
 import Skills from './sections/Skills/Skills';
 import Projects from './sections/Projects/Projects';
@@ -25,7 +25,7 @@ function App() {
           <Skills skills={skills}/>
           <Projects projects={projects}/>
         </Card>
-        <Footer/>
+        <Footer text={footerText}/>
       </Main>
       <Background/>
     </div>

@@ -13,7 +13,7 @@ import Portrait from "../assets/images/portait.png"
 export const name = "Kevin Broadbridge"
 
 export const githubLink = "https://github.com/kebroad"
-export const linkedInLink = "https://github.com/kebroad"
+export const linkedInLink = "https://www.linkedin.com/in/kevin-broadbridge"
 
 export const portrait = Portrait
 
@@ -65,3 +65,5 @@ export const projects = [
 
 export const talks = [
 ]
+
+export const footerText = "2023 - Kevin Broadbridge"

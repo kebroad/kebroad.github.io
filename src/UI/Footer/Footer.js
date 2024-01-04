@@ -1,10 +1,10 @@
 import React from 'react'
 import './Footer.css'
 
-const Footer = () => {
+const Footer = ({text}) => {
   return (
     <footer>
-        <p> 2023 - Kevin Broadbridge </p>
+        <p>{text}</p>
     </footer>
   )
 }
