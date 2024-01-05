@@ -2,4 +2,5 @@ footer {
     font-family: 'Hedvig Letters Serif', serif;
     font-size: 1.5rem;
     backdrop-filter: blur(1px);
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }

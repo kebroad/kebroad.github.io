@@ -9,6 +9,7 @@ const SectionHeader = ({ title, icon }) => {
         <div className="section-header">
             {iconWithClass}
             <h1 className="title">{title}</h1>
+            <div className='icon'></div>
         </div>
     );
 }

@@ -24,11 +24,12 @@
   /* // rgb(197, 69, 63); */
   font-size: 2rem;
   /* background-color: #1B4F72; */
-
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   text-align: left;
 
   margin-left: 0;
   margin-bottom: 0;
+
 }
 
 .header-icon-row{
@@ -40,7 +41,7 @@
   height: 2rem;
   width: 2rem;
   padding: 0.5rem;
-
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.3));
 }
 
 a {
