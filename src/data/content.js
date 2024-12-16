@@ -47,7 +47,7 @@ export const projects = [
     { 
         photos: [RobotDesign, RobotGIF, RobotPlanning ], 
         title: "6 DOF (Degrees of Freedom) Robotic Arm",
-        description: "Designed, 3D printed, and built a robotic ARM. The arm uses a combination of stepper and servo motors with a custom-made cycloidal gearbox on each joint. I developed it with ROS using python nodes and MoveIt! for motion planning. Used Gazebo for simulation."
+        description: "Designed, 3D printed, and built a robotic ARM. The arm uses a combination of stepper and servo motors with a custom-made cycloidal gearbox on each joint. I developed it with ROS using python nodes and MoveIt! with the exported URDF for motion planning. Used Gazebo for simulation."
     },
     {
         photos: [Kubernetes, RaspberryPiCluster],
