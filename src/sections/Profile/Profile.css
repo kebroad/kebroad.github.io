@@ -1,6 +1,7 @@
 .portrait {
   width: 50%;
   border-radius: 0% 0% 20% 20%;
+  aspect-ratio: 1/1;
 }
 
 .profile {
