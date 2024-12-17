@@ -18,11 +18,18 @@ function App() {
     <div className="App">
       <Main>
         <Header name={name} githubLink={githubLink} linkedInLink={linkedInLink} />
-        <Card>
+
           <Profile description={description} portrait={portrait}/>
+        <Card>
           <Experience experience={experience}/>
+        </Card>
+        <Card>
           <Education education={education}/>
+        </Card>
+        <Card>
           <Skills skills={skills}/>
+        </Card>
+        <Card>
           <Projects projects={projects}/>
         </Card>
         <Footer text={footerText}/>

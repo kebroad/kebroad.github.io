@@ -8,7 +8,7 @@ import RobotPlanning from '../assets/images/robot-planning.gif';
 import RaspberryPiCluster from '../assets/images/raspberry-pi-cluster.jpg';
 import Kubernetes from '../assets/images/kubernetes.png';
 import VertigoApp from '../assets/images/vertigo-app.png';
-import Portrait from "../assets/images/portait.png"
+import Portrait from "../assets/images/portrait.jpg"
 
 export const name = "Kevin Broadbridge"
 
@@ -19,7 +19,7 @@ export const portrait = Portrait
 
 export const description = (<>
     <p>🙋🏼‍♂️Welcome to my website! </p>
-    <p>I'm an engineer and tinkerer with a passion for infrastructure, software, and robotics, amongst other things. </p>
+    <p>I'm an engineer with a passion for infrastructure, software, and robotics, amongst other things. </p>
 </>)
 
 export const about = {

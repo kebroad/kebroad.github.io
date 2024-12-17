@@ -1,19 +1,36 @@
 .portrait {
   width: 50%;
-  border-radius: 0% 0% 20% 20%;
-  aspect-ratio: 1/1;
+  border-radius: 0rem 0rem 5rem 0rem;
+  object-fit: cover;
 }
 
 .profile {
     display: flex;
     flex-direction: row;
-    padding-left: 10%;
-    padding-right: 10%;
     align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.description-container {
+    width: 100%;
+}
+
+.description {
+    font-size: 1.5rem;
+    text-align: center;
+    width:70%;
+    margin: auto;
 }
 
 @media (max-width: 768px) {
+    .portrait {
+        width: 100%;
+        border-radius: 5rem 0rem 0rem 0rem;
+    }
     .profile {
         flex-direction: column-reverse;
+    }
+    .description {
+        width: 95%;
     }
 }
