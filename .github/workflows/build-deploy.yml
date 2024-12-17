@@ -32,6 +32,8 @@ jobs:
 
       # - name: Run tests
       #   run: npm run test
+      - name: move CNAME file to build folder
+        run: cp CNAME build/
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
